@@ -1,0 +1,81 @@
+@import "../../colors.css";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.auth-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 100vh;
+}
+
+.auth-core-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.auth-core-container .logo {
+  width: 80px;
+  padding-top: 30px;
+  padding-bottom: 20px;
+}
+
+.auth-core-container h4 {
+  font-weight: normal;
+  font-size: 20px;
+}
+
+.hr {
+  border: 1px solid var(--yale-blue);
+  width: 100%;
+  margin: 10px 0;
+}
+
+.hr-1 {
+  border-width: 3px;
+}
+
+/* FORM STYLING */
+
+.auth-core-container form {
+  width: 350px;
+}
+
+.auth-core-container form input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  border-style: solid;
+}
+
+.auth-core-container form input:hover {
+  border-color: var(--yale-blue);
+}
+
+.auth-core-container form p {
+  text-align: center;
+  padding-bottom: 15px;
+}
+
+.auth-core-container form div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.auth-core-container a {
+  cursor: pointer;
+}
+
+.social-media-icons {
+  font-size: 25px;
+  color: white;
+}

@@ -1,0 +1,248 @@
+@import "../../colors.css";
+
+* {
+  margin: 0;
+  padding: 0;
+  /* box-sizing: border-box; */
+  font-family: "Poppins", "sans-serif";
+}
+
+html {
+  display: flex;
+  /* flex-direction: column; */
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+
+}
+
+.main-container{
+  display: flex;
+  flex-direction: column;
+}
+
+.home-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(246, 247, 249);
+  border: 5px solid var(--berkeley-blue);
+  padding: 10px 30px;
+}
+
+.nav--logo {
+  width: 80px;
+}
+
+.nav-ul-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  list-style: none;
+  text-decoration: none;
+}
+
+.nav-ul-list > a {
+  text-decoration-line: none;
+  list-style: none;
+}
+
+.user-profile {
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+}
+
+.Log-out-btn {
+  padding: 10px 30px;
+  background-color: var(--yale-blue);
+  color: white;
+  border: 2px solid var(--yale-blue);
+  cursor: pointer;
+}
+
+.team-description {
+  text-align: center;
+  font-weight: normal;
+}
+
+.Log-out-btn:hover {
+  background-color: white;
+  color: var(--yale-blue);
+  border-color: var(--yale-blue);
+}
+
+.service-proposer-btn {
+  padding: 10px 30px;
+  background-color: var(--honolulu-blue);
+  color: white;
+  border: 2px solid var(--honolulu-blue);
+  cursor: pointer;
+}
+
+.service-proposer-btn:hover {
+  background-color: white;
+  color: var(--honolulu-blue);
+  border-color: var(--honolulu-blue);
+}
+
+.about-us-header{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+}
+
+.first-hr-line{
+  width: 20%;
+  height: 4px;
+  border: none;
+  background-color: rgb(11, 84, 180);
+  margin: 20px;
+}
+
+.about-us-description{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+}
+
+.about-us-btn{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+}
+
+.about-us-btn button{
+  padding: 10px 30px;
+  background-color: var(--honolulu-blue);
+  color: white;
+  border: 2px solid var(--honolulu-blue);
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.user-cards {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 20px;
+}
+
+.user-card {
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+  width: 200px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.user-image {
+  height: 100px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.user-card h2 {
+  font-size: 1.5em;
+  margin: 10px 0;
+}
+
+.user-card p {
+  font-size: 18px;
+  color: #555;
+}
+
+
+/* GET IN TOUCH SECTION */
+.about-us-contact-center {
+  display: flex;
+  justify-content: space-around;
+  padding: 50px 20px;
+  background-color: #f9f9f9;
+  margin-top: 40px;
+}
+
+.about-us-form-container {
+  flex: 1;
+  max-width: 500px;
+  margin-right: 20px;
+}
+
+.about-us-form-header {
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+
+.about-us-query {
+  font-size: 1.2em;
+  margin-bottom: 20px;
+}
+
+.about-us-form-container form {
+  display: flex;
+  flex-direction: column;
+}
+
+.about-us-form-input {
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  resize: none;
+}
+
+.about-us-form-btn {
+  padding: 10px 20px;
+  background-color: #333;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.about-us-form-btn:hover {
+  background-color: #555;
+}
+
+.about-us-contact {
+  flex: 1;
+  max-width: 500px;
+}
+
+.about-us-contact > div {
+  margin-bottom: 20px;
+}
+
+.about-us-contact h1 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.about-us-contact p {
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+.about-us-contact h3 {
+  font-size: 18px;
+  color: #333;
+}
+
+.sixth-horizontal-div {
+  width: 100%;
+  height: 8px;
+  border: none;
+  background-color: rgb(11, 84, 180);
+}

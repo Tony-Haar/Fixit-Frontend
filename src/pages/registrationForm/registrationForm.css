@@ -1,0 +1,135 @@
+
+.registration-form-container{
+  width: 100%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #f5f5f5;
+  margin: 0;
+}
+
+.registration-main-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f5f5f5;
+  position: relative;
+}
+
+.registration-page-logo {
+  margin-left: 20%;
+}
+.registration-page-logo img {
+  width: 100px;
+  margin: 0 auto;
+}
+
+.card {
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  width: 600px;
+  max-width: 100%;
+}
+
+.card-header {
+  background-color: #ffffff;
+  padding: 20px;
+  text-align: center;
+  border: 3px solid #0d65bd;
+}
+
+.card-header img {
+  max-width: 100px;
+}
+
+.card-body {
+  padding: 20px;
+}
+
+.card-body-header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.card-body-header h2 {
+  margin: 0;
+  color: #333;
+}
+
+.card-body-header p {
+  color: #777;
+}
+
+.card-body-content .input-group {
+  margin-bottom: 15px;
+}
+
+.card-body-content .input-group label {
+  display: block;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+.card-body-content .input-group input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.card-body-content .input-group textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  /* resize: none; */
+}
+
+.card-body-content .input-group select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.card-body-footer {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.card-body-footer button {
+  background-color: #266eda;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin: 0 5px;
+}
+
+.card-body-footer button:hover {
+  background-color: #fcfcfc;
+  color: #266eda;
+}
+
+.error {
+  color: red;
+  text-align: center;
+}
+
+.success {
+  color: green;
+  text-align: center;
+}
+
+.loading {
+  color: blue;
+  text-align: center;
+}
+
+.card-image {
+  display: none;
+}

@@ -1,0 +1,124 @@
+@import "../../colors.css";
+
+.benefits-page-container main h1 {
+    padding: 60px;
+}
+
+
+/*-------------------MAIN */
+
+.benefits-page-container main section {
+    padding: 60px;
+}
+
+.benefits-page-container main section ul {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.benefits-page-container main section ul li {
+    padding-bottom: 5px;
+}
+
+.benefits-ul-li-style {
+    width: 120px;
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    border: 5px solid white;
+    font-size: 60px;
+    color: white;
+    font-weight: bold;
+}
+
+/*------warranty-section */
+
+.li-one {
+    position: relative;
+    left: 60px;
+    top: -18px;
+    z-index: 1;
+    background-color: var(--yale-blue);
+}
+
+.warranty-section img {
+    width: 400px;
+    height: 400px;
+    margin-left: 20px;
+}
+
+.warranty-section ul {
+    padding-left: 30px;
+}
+
+.warranty-section h2 {
+    padding-bottom: 30px;
+}
+
+.warranty-section ul span {
+    font-weight: bold;
+    color: var(--yale-blue);
+}
+
+.warranty-section .float {
+    float: right;
+}
+
+/* --------good deal with us section */
+
+.li-two {
+    position: relative;
+    left: 480px;
+    top: -18px;
+    z-index: 1;
+    background-color: var(--honolulu-blue);
+}
+
+.good-deal-section img {
+    width: 400px;
+    height: 400px;
+    margin-right: 20px;
+}
+
+.good-deal-section ul {
+    padding-left: 450px;
+}
+
+.good-deal-section .float {
+    float: left;
+}
+
+.good-deal-section h2 {
+    padding-bottom: 30px;
+    padding-left: 420px;
+}
+
+.good-deal-section ul span {
+    font-weight: bold;
+    color: var(--honolulu-blue);
+}
+
+/*---------get started section */
+
+._get-started-section_ button {
+    margin-top: 30px;
+    padding: 10px 30px;
+    background-color: var(--honolulu-blue);
+    color: white;
+    border: 2px solid var(--honolulu-blue);
+    cursor: pointer;
+}
+
+._get-started-section_ button:hover {
+    background-color: white;
+    color: var(--honolulu-blue);
+}
+
+.benefits-page-container main hr {
+    height: 10px;
+    width: 100%;
+    margin-bottom: 60px;
+    background-color: var(--yale-blue);
+}

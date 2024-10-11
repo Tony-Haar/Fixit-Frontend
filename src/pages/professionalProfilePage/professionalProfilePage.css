@@ -1,0 +1,245 @@
+@import "../../colors.css";
+
+/* MAIN STYLING */
+
+.professional-profile-page-container main h1 {
+  padding: 60px 60px 30px 60px;
+}
+
+.professional-profile-page-container .main-inner-container {
+  display: grid;
+  grid-template-columns: 1.2fr .8fr;
+  /* justify-content: space-between;
+  align-items: flex-start;
+  width: 100%; */
+  gap: 40px;
+  /* padding: 20px; */
+  padding: 60px;
+  padding-top: 0px;
+}
+
+/* main-inner-container professional-details-container styling */
+
+.professional-profile-page-container .professional-details-inner-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.professional-profile-page-container .professional-details-inner-container img {
+  width: 100px;
+  height: 100px;
+  border-radius: 100%;
+}
+
+.professional-profile-page-container .about-professional {
+  margin-bottom: 20px;
+}
+
+.professional-profile-page-container .professional-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.professional-info-rating {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 5px;
+}
+
+.professional-expertise-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 10px;
+  font-weight: normal;
+  overflow-y: auto;
+  height: 180px;
+}
+
+.professional-expertise-container .expertise {
+  padding: 10px;
+  border-radius: .25rem;
+  background-color: #E5E5E5;
+  font-size: 12px;
+}
+
+/* main-inner-container messages-container styling */
+
+.professional-profile-page-container main .messages-container {
+  height: 400px;
+  position: sticky;
+  top: 20px;
+}
+
+.messages-container h3 {
+  padding-bottom: 10px;
+}
+
+.messages-container .message-display-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 20px;
+  width: 100%;
+  height: 100%;
+  border: 1px solid gray;
+  padding: 20px;
+  font-weight: normal;
+}
+
+.message-display-container .message-display-inner-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 10px;
+  overflow-y: auto;
+  height: 240px;
+}
+
+.message-display-container .user-message {
+  padding: 10px;
+  background-color: var(--honolulu-blue);
+  border-radius: .2rem;
+  color: white;
+  font-size: 12px;
+  width: 80%;
+  margin-left: auto;
+}
+
+.message-display-container .pro-message {
+  padding: 10px;
+  background-color: var(--yale-blue);
+  color: white;
+  border-radius: .2rem;
+  font-size: 12px;
+  width: 80%;
+}
+
+
+.messages-container .message-display-container form {
+  height: 100px;
+  width: 100%;
+}
+
+.messages-container .message-display-container form textarea {
+  height: 100%;
+  width: 100%;
+  resize: none;
+  padding: 10px;
+}
+
+.messages-container .message-display-container form div {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.messages-container .message-display-container form div button {
+  padding: 2.5px 20px;
+  background-color: var(--yale-blue);
+  color: white;
+  border-style: solid;
+  border-color: var(--yale-blue);
+  cursor: pointer;
+}
+
+/* main-inner-container review section styling */
+
+.professional-profile-page-container .review-section {
+  margin-top: 20px;
+  font-weight: normal;
+}
+
+.review-section .review-section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 20px;
+  /* gap: 10px; */
+  /* padding: 20px; */
+  /* font-weight: normal; */
+}
+
+.review-section .review-card {
+  display: block;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 15px;
+  font-weight: normal;
+  border: 2px solid #E5E5E5;
+}
+
+.review-section .review-card .review-card-rating {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+  font-weight: normal;
+}
+
+.review-section .review-card .vertical-separator {
+  width: 2px;
+  height: 25px;
+  background-color: #E5E5E5;
+}
+
+.review-section .review-card .review-card-profile {
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  font-weight: bolder;
+  background-color: #ed4407;
+  color: white;
+}
+
+.review-card-rating .rating {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.review-card p {
+  padding-left: 60px;
+}
+
+/* main-inner-container portfolio section styling */
+
+.professional-profile-page-container .portfolio-section {
+  padding-top: 20px;
+}
+
+.professional-profile-page-container .portfolio-section h3 {
+  padding-bottom: 20px;
+}
+/* .portfolio-page-container {
+  display: block;
+  flex-direction: column;
+  padding: 20px;
+} */
+.portfolio-section .portfolio-images-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  overflow-x: scroll;
+  padding-bottom: 20px;
+}
+
+.portfolio-section .portfolio-images-container img {
+  width: 210px;
+  height: 210px;
+  transition: transform 0.3s ease;
+}
+
+.portfolio-section .portfolio-images-container img:hover {
+  transform: scale(1.1);
+}
