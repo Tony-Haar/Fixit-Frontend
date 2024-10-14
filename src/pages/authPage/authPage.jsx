@@ -112,11 +112,11 @@ function AuthPage() {
 
         {page === "signin" ? (
           <p>
-            New to the platform? <a href="">Create an account</a>
+            New to the platform? <a href="/auth/signup">Create an account</a>
           </p>
         ) : (
           <p>
-            Already have an account? <a href="">Sign in here</a>
+            Already have an account? <a href="/auth/signin">Sign in here</a>
           </p>
         )}
       </div>

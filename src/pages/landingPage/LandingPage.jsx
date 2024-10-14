@@ -9,6 +9,7 @@ import WarrantyImage from "../../assets/warranty.webp";
 import "./landingPage.css";
 import serviceData from "../../db/servicesData";
 import Service from "../../components/service";
+import Navbar from "../../components/Navbar";
 
 function LandingPage() {
   const serviceElements = serviceData.map((service) => (
@@ -18,34 +19,7 @@ function LandingPage() {
   return (
     <>
       <header>
-        <nav className="navbar">
-          <img src={Logo} alt="Fix-It-Logo" className="Logo" />
-
-          <div className="navbar-menu">
-            <Link to="/service">
-              <a href="" className="navbar-link-item">
-                Pro Service
-              </a>
-            </Link>
-            <Link to="/USER_PAGE">
-              <a href="" className="navbar-link-item">
-                Choose Your Service
-              </a>
-            </Link>
-            <div className="navbar-menu-inner-div">
-              <Link to="/auth">
-                <button type="button" className="btn-login">
-                  Login
-                </button>
-              </Link>
-              <Link to="/create">
-                <button type="button" className="btn-join">
-                  Join
-                </button>
-              </Link>
-            </div>
-          </div>
-        </nav>
+        <Navbar />
         <div className="header-hero">
           <form action="" className="header-hero-form">
             <h1>H1 Phrase</h1>
@@ -96,7 +70,7 @@ function LandingPage() {
               each offer for both the customer user and service <br />
               proposer
             </p>
-            <Link to = "/benefits">
+            <Link to="/benefits">
               <button>Learn More</button>
             </Link>
           </div>
@@ -112,7 +86,7 @@ function LandingPage() {
               each Pro service for both the customer user <br />
               and service proposer
             </p>
-            <Link to = "/benefits">
+            <Link to="/benefits">
               <button>Learn More</button>
             </Link>
           </div>
@@ -135,7 +109,7 @@ function LandingPage() {
             XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
             XXXXXXXXXXXXXXXXXXXXXXXXXXXX XXXXXXXXXX.
           </p>
-          <Link to = "/benefits">
+          <Link to="/benefits">
             <button>Learn More</button>
           </Link>
         </div>
@@ -145,7 +119,7 @@ function LandingPage() {
 
       <footer className="footer">
         <div className="footer-link-item-container">
-          <a href="">About Us</a>
+          <a href="/about-us">About Us</a>
           <a href="">Terms Of Services</a>
           <a href="">Privacy Policy</a>
           <a href="">Help & Support</a>

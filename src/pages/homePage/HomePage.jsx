@@ -17,6 +17,8 @@ import Service from "../../components/service";
 import serviceData from "../../db/servicesData";
 import Button from "../../components/Button";
 
+import Navbar from "../../components/Navbar";
+
 function HomePage() {
   const serviceElements = serviceData.map((service) => (
     <Service key={service.id} service={service.service} image={service.image} />
@@ -45,26 +47,7 @@ function HomePage() {
   return (
     <div className="home-page-container">
       <header>
-        <nav className="home-nav">
-          <img src={Logo} alt="" className="nav--logo" />
-          <ul className="nav-ul-list">
-            <Link to="/how-it-works">
-              <a href="">how it works</a>
-            </Link>
-            <li>
-              <a href="">Professional profiles</a>
-            </li>
-            <li>
-              <button className="service-proposer-btn">
-                SWITCH TO PROFESSIONAL
-              </button>
-            </li>
-            <li>
-              <button className="Log-out-btn">LOG OUT</button>
-            </li>
-            <img src={Profile} className="user-profile" />
-          </ul>
-        </nav>
+        <Navbar />
         <div className="header-hero home-hero">
           <div>
             <h1>Welcome To Fixit</h1>
@@ -93,7 +76,9 @@ function HomePage() {
                 </option>
               </select>
               <br />
-              <input type="submit" value="FIND A PROFESSIONAL" />
+              <Link to="/find-pro">
+                <input type="submit" value="FIND A PROFESSIONAL" />
+              </Link>
             </form>
           </div>
           <div className="gears-container">
@@ -171,7 +156,9 @@ function HomePage() {
         <section className="get-started-section">
           <h1>Ready to get started?</h1>
           <p>Join thousands of satisfied customers today</p>
-          <button>JOIN</button>
+          <Link to="/auth/signin">
+            <button>JOIN</button>
+          </Link>
         </section>
 
         <div className="fifth-horizontal-div"></div>
@@ -182,7 +169,9 @@ function HomePage() {
             XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
             XXXXXXXXXXXXXXXXXXXXXXXXXXXX XXXXXXXXXX.
           </p>
-          <button>Learn More</button>
+          <Link to="/how-it-works">
+            <button>Learn More</button>
+          </Link>
         </section>
       </main>
 

@@ -8,6 +8,7 @@ import Logo from "../../assets/Logo.png";
 import Profile from "../../assets/profile.jpeg";
 import Chuan from "../../assets/Image.jpg";
 import "./aboutUsPage.css";
+import Navbar from "../../components/Navbar";
 
 function AboutUsPage() {
   const userCard = [
@@ -25,27 +26,7 @@ function AboutUsPage() {
 
   return (
     <div className="main-container">
-      <nav className="home-nav">
-        <img src={Logo} alt="" className="nav--logo" />
-        <ul className="nav-ul-list">
-          <Link to="/how-it-works">
-            <a href="">how it works</a>
-          </Link>
-          <li>
-            <a href="">Professional profiles</a>
-          </li>
-          <li>
-            <button className="service-proposer-btn">
-              SWITCH TO PROFESSIONAL
-            </button>
-          </li>
-          <li>
-            <button className="Log-out-btn">LOG OUT</button>
-          </li>
-          <img src={Profile} className="user-profile" />
-        </ul>
-      </nav>
-
+      <Navbar />
       <div className="about-us-hero">
         <div className="about-us-header">
           <img src={Logo} className="about-us-mid-logo" alt="Logo" />
