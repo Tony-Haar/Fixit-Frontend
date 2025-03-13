@@ -3,13 +3,13 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faStar } from "@fortawesome/free-solid-svg-icons";
 
 import "./professionalProfilePage.css";
-import Logo from "../../assets/Logo.png";
 import Profile from "../../assets/profile.jpeg";
 import Paint from "../../assets/painting.png";
 import Mechanic from "../../assets/mechanic.png";
 import Plumbing from "../../assets/plumbing.png";
 
 import Navbar from "../../components/Navbar";
+import Footer from "../../components/Footer";
 
 function ProfessionalProfilePage() {
   return (
@@ -123,16 +123,7 @@ function ProfessionalProfilePage() {
         </div>
       </main>
 
-      <footer className="footer">
-        <div className="footer-link-item-container">
-          <a href="/about-us">About Us</a>
-          <a href="">Terms Of Services</a>
-          <a href="">Privacy Policy</a>
-          <a href="">Help & Support</a>
-        </div>
-        <h3>&copy; FIXit, ALL RIGHTS RESERVED</h3>
-        <hr />
-      </footer>
+      <Footer />
     </div>
   );
 }

@@ -10,7 +10,6 @@
 html {
   display: flex;
   flex-direction: column;
-  /* background-color: rgba(21, 127, 102, 0.868); */
 }
 
 body {
@@ -21,7 +20,7 @@ body {
 }
 
 .Logo {
-  width: 80px;
+  width: 100px;
 }
 
 .navbar {
@@ -29,8 +28,8 @@ body {
   justify-content: space-between;
   align-items: center;
   background-color: white;
-  border: 5px solid var(--berkeley-blue);
-  padding: 10px 30px;
+  border: 5px solid var(--yale-blue);
+  padding: 5px 15px;
 }
 
 .navbar-menu {
@@ -49,36 +48,36 @@ body {
 
 .navbar-link-item {
   text-decoration: none;
-  color: black;
+  color: var(--orange-web);
   cursor: pointer;
 }
 
 .btn-login {
   padding: 10px 30px;
-  background-color: var(--yale-blue);
-  color: white;
-  border: 2px solid var(--yale-blue);
+  background-color: var(--orange-web);
+  color: var(--yale-blue);
+  border: 2px solid var(--orange-web);
   cursor: pointer;
 }
 
 .btn-login:hover {
   background-color: white;
-  color: var(--yale-blue);
-  border-color: var(--yale-blue);
+  color: var(--orange-web);
+  border-color: var(--orange-web);
 }
 
 .btn-join {
   padding: 10px 30px;
-  background-color: var(--honolulu-blue);
-  color: white;
-  border: 2px solid var(--honolulu-blue);
+  background-color: var(--berkeley-blue);
+  color: var(--orange-web);
+  border: 2px solid var(--berkeley-blue);
   cursor: pointer;
 }
 
 .btn-join:hover {
   background-color: white;
-  color: var(--honolulu-blue);
-  border-color: var(--honolulu-blue);
+  color: var(--berkeley-blue);
+  border-color: var(--berkeley-blue);
 }
 
 .header-hero {
@@ -95,9 +94,9 @@ body {
 
 .header-hero-form button {
   padding: 10px;
-  background-color: var(--yale-blue);
+  background-color: var(--orange-web);
   color: white;
-  border-color: var(--yale-blue);
+  border-color: var(--orange-web);
   cursor: pointer;
 }
 
@@ -114,9 +113,10 @@ body {
 .partners-container {
   width: 100%;
   display: flex;
+  color: var(--orange-web);
   justify-content: center;
   align-items: center;
-  background-color: var(--honolulu-blue);
+  background-color: var(--berkeley-blue);
   padding: 30px 0;
 }
 
@@ -131,7 +131,7 @@ body {
 .line {
   width: 95%;
   margin-left: 30px;
-  border: 3px solid var(--berkeley-blue);
+  border: 3px solid var(--orange-web);
   margin-bottom: 30px;
   margin-top: 10px;
 }
@@ -424,3 +424,5 @@ body {
   padding-bottom: 30px;
   padding-top: 50px;
 }
+
+

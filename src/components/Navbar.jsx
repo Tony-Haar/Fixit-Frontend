@@ -9,14 +9,14 @@ export default function Navbar() {
         <img src={Logo} alt="Fix-It-Logo" className="Logo" />
 
         <div className="navbar-menu">
-          <Link to="/service">
+          <Link to="find-pro">
             <a href="" className="navbar-link-item">
-              Pro Service
+              Services
             </a>
           </Link>
           <Link to="/home">
             <a href="" className="navbar-link-item">
-              Choose Your Service
+              Home
             </a>
           </Link>
           <div className="navbar-menu-inner-div">

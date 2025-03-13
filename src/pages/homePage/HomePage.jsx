@@ -7,14 +7,12 @@ import { faWifi } from "@fortawesome/free-solid-svg-icons";
 import { faScrewdriverWrench } from "@fortawesome/free-solid-svg-icons";
 import { faHandshakeAngle } from "@fortawesome/free-solid-svg-icons";
 
-import Logo from "../../assets/Logo.png";
-import Profile from "../../assets/profile.jpeg";
 import StepImage from "../../assets/step.png";
 import "./homePage.css";
 import YaleGear from "../../../docs/yale-gear.svg";
 import HonoluluGear from "../../../docs/honolulu-gear.svg";
 import Service from "../../components/service";
-import serviceData from "../../db/servicesData";
+import { assets, serviceData } from "../../assets/assets";
 import Button from "../../components/Button";
 
 import Navbar from "../../components/Navbar";
@@ -147,7 +145,7 @@ function HomePage() {
                 <button>LEARN MORE</button>
               </Link>
             </div>
-            <img src={StepImage} alt="" />
+            <img src={assets.Step} alt="" />
           </div>
         </section>
 

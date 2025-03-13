@@ -12,6 +12,7 @@ import ProfessionalProfilePage from "./pages/professionalProfilePage/Professiona
 import AboutUsPage from "./pages/aboutUsPage.jsx/AboutUsPage";
 import RegistrationForm from "./pages/registrationForm/RegistrationForm";
 
+
 function App() {
   return (
     <>
@@ -26,6 +27,7 @@ function App() {
           ></Route>
           <Route path="/benefits" element={<BenefitsPage />}></Route>
           <Route path="/how-it-works" element={<HIWPage />}></Route>
+
           <Route
             path="/domain/service-details"
             element={<DomainServiceDetailPage />}

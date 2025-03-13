@@ -1,13 +1,9 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import Logo from "../../assets/Logo.png";
-
-import Illustration from "../../assets/illustration.png";
-import DealImage from "../../assets/getthedeal.png";
-import WarrantyImage from "../../assets/warranty.webp";
+import { assets } from "../../assets/assets";
+import { serviceData } from "../../assets/assets";
 
 import "./landingPage.css";
-import serviceData from "../../db/servicesData";
 import Service from "../../components/service";
 import Navbar from "../../components/Navbar";
 
@@ -22,19 +18,14 @@ function LandingPage() {
         <Navbar />
         <div className="header-hero">
           <form action="" className="header-hero-form">
-            <h1>H1 Phrase</h1>
+            <h1>Search For what fits you.</h1>
 
             <input type="text" placeholder="Search for any service" />
             <button type="submit" className="hero-btn">
               Search Icon
             </button>
           </form>
-
-          {/* <div className="hero-illustration">
-					different dynamic casual jobs illustrations t hat changes each
-					defined time.
-				</div> */}
-          <img src={Illustration} alt="" />
+          <img src={assets.Illustration} alt="" />
         </div>
       </header>
 
@@ -47,19 +38,13 @@ function LandingPage() {
           <h1>Services</h1>
           <div className="line"></div>
           <div className="horizontal-images">{serviceElements}</div>
-          {/* <div className="horizontal-images">
-						<img src={image1} alt="Image One" />
-						<img src={image2} alt="Image Two" />
-						<img src={image3} alt="Image Three" />
-						<img src={image4} alt="Image Four" />
-					</div> */}
         </div>
 
         <h1 className="offer-label">Offers</h1>
         <div className="line"></div>
         <section className="offer">
           <div className="offer-illustration">
-            <img src={WarrantyImage} alt="Image Five" />
+            <img src={assets.Warranty} alt="Image Five" />
           </div>
           <div className="offer-inner-right-container">
             <div>
@@ -91,7 +76,7 @@ function LandingPage() {
             </Link>
           </div>
           <div className="pro-service-illustration">
-            <img src={DealImage} alt="Six Image" />
+            <img src={assets.GettheDeal} alt="Six Image" />
           </div>
         </section>
 
@@ -106,8 +91,9 @@ function LandingPage() {
           <h1>Why using our platform?</h1>
           <div className="line"></div>
           <p>
-            XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
-            XXXXXXXXXXXXXXXXXXXXXXXXXXXX XXXXXXXXXX.
+            We offer the best services ever that you can find in the market.
+            <br />
+            Here are some reasons why you should choose us.
           </p>
           <Link to="/benefits">
             <button>Learn More</button>

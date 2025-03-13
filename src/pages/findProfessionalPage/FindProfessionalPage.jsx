@@ -3,7 +3,8 @@ import React from "react";
 import Logo from "../../assets/Logo.png";
 import Profile from "../../assets/profile.jpeg";
 import ProfessionalPositionData from "../../db/proPositionData";
-import serviceData from "../../db/servicesData";
+import { serviceData } from "../../assets/assets";
+
 import Button from "../../components/Button";
 import Position from "../../components/proPosition";
 import { isWithinRange, haversineDistance } from "../../components/GeoUtils";
@@ -12,9 +13,8 @@ import "./findProfessionalPage.css";
 import Navbar from "../../components/Navbar";
 
 export default function FindProfessionalPage() {
-  // let's work with static position of a client
   const clientPositionCoordinates = { latitude: 6.465422, longitude: 3.406448 };
-  const range = 200; // 200 meters square range
+  const range = 200;
 
   const style = {
     display: "flex",

@@ -6,9 +6,9 @@ import { faAngleLeft, faAngleRight } from "@fortawesome/free-solid-svg-icons";
 
 import Logo from "../../assets/Logo.png";
 import "./profilesPage.css";
-import serviceData from "../../db/servicesData";
+import { serviceData } from "../../assets/assets";
 import profilesData from "../../db/profilesData";
-import serviceRelatedImageData from "../../db/relatedImageData";
+import { serviceRelatedImageData } from "../../assets/assets";
 import Button from "../../components/Button";
 import Profile from "../../components/profile";
 import RelatedImage from "../../components/relatedImage";

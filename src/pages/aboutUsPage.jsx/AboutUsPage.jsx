@@ -3,24 +3,23 @@ import { Link } from "react-router-dom";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPhone, faLocation } from "@fortawesome/free-solid-svg-icons";
-
+import { assets } from "../../assets/assets";
 import Logo from "../../assets/Logo.png";
-import Profile from "../../assets/profile.jpeg";
-import Chuan from "../../assets/Image.jpg";
+
 import "./aboutUsPage.css";
 import Navbar from "../../components/Navbar";
 
 function AboutUsPage() {
   const userCard = [
     {
-      name: "Lemi Marcel",
+      name: "yyyyyy yyyyyy",
       title: "Company Founder and CEO",
-      image: Profile,
+      image: assets.Founder1,
     },
     {
-      name: "Chuan Haar",
+      name: "xxxxxx xxxxxxx",
       title: "Company Co-Founder",
-      image: Chuan,
+      image: assets.Founder2,
     },
   ];
 
@@ -29,8 +28,6 @@ function AboutUsPage() {
       <Navbar />
       <div className="about-us-hero">
         <div className="about-us-header">
-          <img src={Logo} className="about-us-mid-logo" alt="Logo" />
-          <div className="first-hr-line"></div>
           <h1 className="about-us-description">Meet Our Team</h1>
           <h4 className="team-description">
             We are a team of passionate individuals who are dedicated to

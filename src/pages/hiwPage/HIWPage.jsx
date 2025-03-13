@@ -6,8 +6,7 @@ import { faList } from "@fortawesome/free-solid-svg-icons";
 import { faWifi } from "@fortawesome/free-solid-svg-icons";
 import { faHandshakeAngle } from "@fortawesome/free-solid-svg-icons";
 
-import Logo from "../../assets/Logo.png";
-import Profile from "../../assets/profile.jpeg";
+
 import "./HIWPage.css";
 
 import Navbar from "../../components/Navbar";

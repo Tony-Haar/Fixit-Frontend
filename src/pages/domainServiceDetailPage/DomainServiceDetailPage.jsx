@@ -1,11 +1,10 @@
 import React from "react";
 
-import Logo from "../../assets/Logo.png";
-import Profile from "../../assets/profile.jpeg";
-import domainServiceData from "../../db/domainServiceData";
+import { domainServiceData } from "../../assets/assets";
 import DomainService from "../../components/DomainService";
-import "./domainServiceDetailPage.css";
 
+import "./domainServiceDetailPage.css";
+import Footer from "../../components/Footer";
 import Navbar from "../../components/Navbar";
 
 export default function DomainServiceDetailPage() {
@@ -54,6 +53,7 @@ export default function DomainServiceDetailPage() {
               <option value="Mechanics">Mechanics</option>
               <option value="Electronics">Mechanics</option>
             </select>
+
             <select name="services" id="service-select">
               <option value="">--select the service type--</option>
               <option value="Masonary ">block and stone repair</option>
@@ -74,16 +74,7 @@ export default function DomainServiceDetailPage() {
         <hr />
       </main>
 
-      <footer className="footer">
-        <div className="footer-link-item-container">
-          <a href="">About Us</a>
-          <a href="">Terms Of Services</a>
-          <a href="">Privacy Policy</a>
-          <a href="">Help & Support</a>
-        </div>
-        <h3>&copy; FIXit, ALL RIGHTS RESERVED</h3>
-        <hr />
-      </footer>
+      <Footer />
     </div>
   );
 }

@@ -4,6 +4,7 @@ import {faStar} from '@fortawesome/free-solid-svg-icons';
 
 import ProfileImage from "../assets/profile.jpeg";
 
+
 export default function Profile(props) {
   return (
     <a href="/pro-profile">
