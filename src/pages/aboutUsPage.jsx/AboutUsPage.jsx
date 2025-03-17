@@ -8,6 +8,7 @@ import Logo from "../../assets/Logo.png";
 
 import "./aboutUsPage.css";
 import Navbar from "../../components/Navbar";
+import Footer from "../../components/Footer";
 
 function AboutUsPage() {
   const userCard = [
@@ -115,16 +116,7 @@ function AboutUsPage() {
 
       <div className="sixtth-horizontal-div"></div>
 
-      <footer className="footer">
-        <div className="footer-link-item-container">
-          <a href="">About Us</a>
-          <a href="">Terms Of Services</a>
-          <a href="">Privacy Policy</a>
-          <a href="">Help & Support</a>
-        </div>
-        <h3>&copy; FIXit, ALL RIGHTS RESERVED</h3>
-        <hr />
-      </footer>
+      <Footer />
     </div>
   );
 }

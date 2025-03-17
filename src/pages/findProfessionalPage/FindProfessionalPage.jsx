@@ -11,6 +11,7 @@ import { isWithinRange, haversineDistance } from "../../components/GeoUtils";
 import "./findProfessionalPage.css";
 
 import Navbar from "../../components/Navbar";
+import Footer from "../../components/Footer";
 
 export default function FindProfessionalPage() {
   const clientPositionCoordinates = { latitude: 6.465422, longitude: 3.406448 };
@@ -77,7 +78,7 @@ export default function FindProfessionalPage() {
       </header>
 
       <main>
-        <h1>Voilà! Here we go! the nearest Professionals</h1>
+        <h1>Amazing! Here we go! the nearest Professionals</h1>
         <h4 className="subtitle">
           click any location dot and see the professional profile.
           <br />
@@ -117,16 +118,7 @@ export default function FindProfessionalPage() {
         <hr />
       </main>
 
-      <footer className="footer">
-        <div className="footer-link-item-container">
-          <a href="">About Us</a>
-          <a href="">Terms Of Services</a>
-          <a href="">Privacy Policy</a>
-          <a href="">Help & Support</a>
-        </div>
-        <h3>&copy; FIXit, ALL RIGHTS RESERVED</h3>
-        <hr />
-      </footer>
+      <Footer />
     </div>
   );
 }

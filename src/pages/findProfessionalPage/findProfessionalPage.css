@@ -1,11 +1,3 @@
-
-
-/* MAIN STYLING */
-
-/* .find-pro-container main {
-    padding: 60px;
-} */
-
 .find-pro-container main h1 {
     padding: 60px 60px 0px 60px;
 }
@@ -14,8 +6,6 @@
     font-weight: normal;
     padding: 0px 60px 40px 60px;
 }
-
-/* legend container */
 
 .find-pro-container .legend {
     padding: 0px 60px;
@@ -42,8 +32,6 @@
     background-color: #F41313;
 }
 
-/* map section */
-
 .find-pro-container main .map-section {
     padding: 40px 60px 40px 60px;
 }
@@ -67,7 +55,6 @@
     grid-row: 5;
 }
 
-        /* thumbtack */
 
 .position-thumbtack {
     width: fit-content;
@@ -83,8 +70,6 @@
     font-size: 25px;
 }
 
-/* reusable button section */
-
 .find-pro-container main .reusable-btn-section h1 {
     padding-left: 30px;
     padding-top: 30px;
@@ -96,3 +81,7 @@
     margin-bottom: 60px;
     margin-top: 30px;
 }
+
+
+
+

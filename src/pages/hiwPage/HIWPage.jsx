@@ -6,10 +6,10 @@ import { faList } from "@fortawesome/free-solid-svg-icons";
 import { faWifi } from "@fortawesome/free-solid-svg-icons";
 import { faHandshakeAngle } from "@fortawesome/free-solid-svg-icons";
 
-
 import "./HIWPage.css";
 
 import Navbar from "../../components/Navbar";
+import Footer from "../../components/Footer";
 
 export default function HIWPage() {
   return (
@@ -19,13 +19,18 @@ export default function HIWPage() {
       </header>
 
       <main>
-        <h1>How It Works?</h1>
-        <h4>
+        <h1 className="text-start mb-5">
+          How It <span className="how-it-works-span1 fs-bold">Works?</span>
+        </h1>
+        <h4 className="text-start mb-5">
           A simple, three-step process to get your repairs done
-          <br /> quickly and efficiently
+          <br />
+          <span className="how-it-works-span2 lead fs-bold">
+            quickly and efficiently
+          </span>
         </h4>
 
-        <section>
+        <section className="mb-5">
           <div className="steps-section">
             <h2>1 - Post your repair need</h2>
             <h3>Select the service domain and type.</h3>
@@ -114,6 +119,7 @@ export default function HIWPage() {
               </option>
             </select>
             <br />
+
             <input type="submit" value="FIND A PROFESSIONAL" />
           </form>
         </section>
@@ -121,16 +127,7 @@ export default function HIWPage() {
         <hr />
       </main>
 
-      <footer className="footer">
-        <div className="footer-link-item-container">
-          <a href="">About Us</a>
-          <a href="">Terms Of Services</a>
-          <a href="">Privacy Policy</a>
-          <a href="">Help & Support</a>
-        </div>
-        <h3>&copy; FIXit, ALL RIGHTS RESERVED</h3>
-        <hr />
-      </footer>
+      <Footer />
     </div>
   );
 }

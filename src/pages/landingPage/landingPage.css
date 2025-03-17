@@ -4,7 +4,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Poppins', 'sans-serif';
+  font-family: "Poppins", "sans-serif";
 }
 
 html {
@@ -109,6 +109,13 @@ body {
   height: 300px;
   background-color: #9c9a9a;
 }
+.illustration-img img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  border-top-left-radius: 50%;
+  border-bottom-right-radius: 50%;
+}
 
 .partners-container {
   width: 100%;
@@ -140,7 +147,6 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  /* gap: 30px; */
 }
 
 .services-display-container h1,
@@ -163,9 +169,8 @@ body {
   align-items: center;
   width: 300px;
   height: 245px;
-  /* border: 3px solid var(--berkeley-blue); */
   border-radius: 0.5rem;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease;
   cursor: pointer;
 }
@@ -180,7 +185,6 @@ body {
 }
 
 .service-card h3 {
-  /* height: 30px; */
   padding: 10px 0;
   color: var(--berkeley-blue);
 }
@@ -188,8 +192,6 @@ body {
 .horizontal-images {
   margin: 0 30px;
   display: flex;
-  /*   justify-content: center;
- */
   align-items: center;
   gap: 10px;
   margin-bottom: 60px;
@@ -233,22 +235,21 @@ body {
   color: white;
 }
 
+/* Offers container */
 .offer-inner-right-container {
   width: 60%;
   padding-top: 30px;
   padding-left: 25%;
   border-top-left-radius: 5rem;
   border-bottom-right-radius: 5rem;
-  background-color: var(--honolulu-blue);
+  background-color: var(--berkeley-blue);
 }
 
 .offer-inner-right-container:hover {
-  background-color: var(--yale-blue);
+  background-color: var(--white);
+  color: var(--orange-web);
+  border: 2px solid var(--berkeley-blue);
 }
-
-/* .offer-inner-right-container h1 {
-  padding-bottom: 20px;
-} */
 
 .offer-inner-right-container div {
   width: 330px;
@@ -271,40 +272,43 @@ body {
   padding-right: 25%;
   border-top-right-radius: 5rem;
   border-bottom-left-radius: 5rem;
-  background-color: var(--yale-blue);
+  background-color: var(--berkeley-blue);
   display: flex;
   flex-direction: column;
   align-items: flex-end;
 }
 
 .pro-service-inner-left-container:hover {
-  background-color: var(--honolulu-blue);
+  background-color: var(--white);
+  color: var(--orange-web);
+  border: 2px solid var(--berkeley-blue);
 }
-
-/* .pro-service-inner-left-container h1 {
-  padding-bottom: 20px;
-} */
 
 .pro-service-inner-left-container button {
   border: 2px solid white;
-  background-color: transparent;
+  /* background-color: transparent; */
+  background-color: var(--berkeley-blue);
+  color: var(--white);
   cursor: pointer;
 }
 
 .pro-service-inner-left-container button:hover {
-  border: 2px solid white;
-  background-color: var(--yale-blue);
+  border: 2px solid var(--berkeley-blue);
+  background-color: var(--white);
+  color: var(--orange-web);
 }
 
 .offer-inner-right-container button {
   border: 2px solid white;
-  background-color: transparent;
+  /* background-color: transparent; */
+  background-color: var(--berkeley-blue);
+  color: var(--white);
   cursor: pointer;
 }
 
 .offer-inner-right-container button:hover {
   border: 2px solid white;
-  background-color: var(--honolulu-blue);
+  background-color: var(--berkeley-blue);
 }
 
 .pro-service-inner-left-container div {
@@ -331,12 +335,15 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: var(--honolulu-blue);
+  background-color: var(--berkeley-blue);
   padding: 100px 0;
+  color: var(--orange-web);
 }
 
 .testimonies-container:hover {
-  background-color: var(--yale-blue);
+  background-color: var(--white);
+  color: var(--berkeley-blue);
+  border: 2px solid var(--orange-web);
 }
 
 .reasons-container {
@@ -360,8 +367,8 @@ body {
 .reasons-container button {
   width: 140px;
   padding: 10px;
-  background-color: var(--yale-blue);
-  border-color: var(--yale-blue);
+  background-color: var(--berkeley-blue);
+  border-color: var(--berkeley-blue);
   border-style: solid;
   color: white;
   margin-left: 30px;
@@ -369,14 +376,14 @@ body {
 
 .reasons-container button:hover {
   background-color: white;
-  color: var(--yale-blue);
+  color: var(--orange-web);
 }
 
 .landing-page-main-container hr,
 .footer hr {
   height: 10px;
   width: 100%;
-  background-color: var(--yale-blue);
+  background-color: var(--orange-web);
 }
 
 .footer-link-item-container {
@@ -385,18 +392,20 @@ body {
   gap: 30px;
   align-items: center;
   padding: 30px 0;
-  background-color: var(--honolulu-blue);
-  color: white;
+  background-color: var(--berkeley-blue);
+  color: var(--orange-web);
 }
 
 .footer-link-item-container:hover {
-  background-color: var(--yale-blue);
+  background-color: var(--white);
+  color: var(--orange-web);
+  border: 2px solid var(--berkeley-blue);
 }
 
 .footer-link-item-container a {
   text-decoration: none;
   cursor: pointer;
-  color: white;
+  color: var(--orange-web);
   border-bottom: 2px solid transparent;
 }
 
@@ -421,8 +430,11 @@ body {
 
 .footer h3 {
   text-align: center;
+  color: var(--berkeley-blue);
   padding-bottom: 30px;
   padding-top: 50px;
 }
 
-
+span {
+  color: var(--orange-web);
+}

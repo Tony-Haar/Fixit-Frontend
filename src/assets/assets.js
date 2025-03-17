@@ -5,12 +5,14 @@ import Founder2 from "./founder2.jpg";
 
 import Step from "./step.png";
 import Warranty from "./warranty.webp";
+import Warrant1 from "./Warrant11.png";
 import Agreement from "./Agreement.png";
 import GettheDeal from "./getthedeal.png";
+import Deal from "./Deal.png";
 import GoodDeal from "./GoodDeal.jpg";
 import Illustration from "./illustration.png";
-
-
+import Illustration1 from "./illustration1.png";
+import Illustration2 from "./illustration2.png";
 
 import Image1 from "./mechanic.png";
 import Image2 from "./plumbing.png";
@@ -23,8 +25,6 @@ import Image8 from "./AirConditioning.png";
 import Image9 from "./sanitation.webp";
 import Image10 from "./SecuritySystems.jpeg";
 
-
-
 import carpenter1 from "./carpentry/carpenter1.jpg";
 import carpenter2 from "./carpentry/carpenter2.jpg";
 import carpenter3 from "./carpentry/carpenter3.jpg";
@@ -35,12 +35,10 @@ import plumber2 from "./plumbing/plumber2.jpg";
 import plumber3 from "./plumbing/plumber3.jpg";
 import plumber4 from "./plumbing/plumber4.jpg";
 
-
 import mechanic1 from "./mechanic/mechanic1.jpg";
 import mechanic2 from "./mechanic/mechanic2.jpg";
 import mechanic3 from "./mechanic/mechanic3.jpg";
 import mechanic4 from "./mechanic/mechanic4.jpg";
-
 
 import electrician1 from "./electrician/electrician1.jpg";
 import electrician2 from "./electrician/electrician2.jpg";
@@ -64,11 +62,55 @@ export const assets = {
   Founder2,
   Step,
   Warranty,
+  Warrant1,
   Agreement,
   GettheDeal,
+  Deal,
   GoodDeal,
   Illustration,
+  Illustration1,
+  Illustration2,
 };
+
+export const partners = [
+  {
+    id: 1,
+    image: Logo,
+    name: "Handyman Services",
+    description: "Leading provider of high-quality tools.",
+  },
+  {
+    id: 2,
+    image: Profile,
+    name: "Diamond Store",
+    description: "Supplier of premium repair materials.",
+  },
+  {
+    id: 3,
+    image: Illustration,
+    name: "All-Star Repairs",
+    description: "Innovative solutions for modern repairs.",
+  },
+  {
+    id: 4,
+    image: Illustration1,
+    name: "Quick Fix",
+    description: "Leading provider of high-quality tools.",
+  },
+  {
+    id: 5,
+    image: GoodDeal,
+    name: "Live Deal",
+    description: "Supplier of premium repair materials.",
+  },
+  {
+    id: 6,
+    image: GoodDeal,
+    name: "Flex Zone",
+    description: "Innovative solutions for modern repairs.",
+  },
+];
+
 
 
 export const serviceData = [

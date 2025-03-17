@@ -16,6 +16,7 @@ import { assets, serviceData } from "../../assets/assets";
 import Button from "../../components/Button";
 
 import Navbar from "../../components/Navbar";
+import Footer from "../../components/Footer";
 
 function HomePage() {
   const serviceElements = serviceData.map((service) => (
@@ -48,7 +49,7 @@ function HomePage() {
         <Navbar />
         <div className="header-hero home-hero">
           <div>
-            <h1>Welcome To Fixit</h1>
+            <h1>Welcome To Service-Linker</h1>
             <p>
               Connecting you with qualified professionals for quick assistance.
             </p>
@@ -175,16 +176,7 @@ function HomePage() {
 
       <div className="sixtth-horizontal-div"></div>
 
-      <footer className="footer">
-        <div className="footer-link-item-container">
-          <a href="">About Us</a>
-          <a href="">Terms Of Services</a>
-          <a href="">Privacy Policy</a>
-          <a href="">Help & Support</a>
-        </div>
-        <h3>&copy; FIXit, ALL RIGHTS RESERVED</h3>
-        <hr />
-      </footer>
+      <Footer />
     </div>
   );
 }

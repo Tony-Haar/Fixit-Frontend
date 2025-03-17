@@ -12,6 +12,7 @@ import { serviceRelatedImageData } from "../../assets/assets";
 import Button from "../../components/Button";
 import Profile from "../../components/profile";
 import RelatedImage from "../../components/relatedImage";
+import Footer from "../../components/Footer";
 
 export default function ProfilesPage() {
   const professionalProfileData = profilesData["plumbing"];
@@ -127,16 +128,7 @@ export default function ProfilesPage() {
         <hr />
       </main>
 
-      <footer className="footer">
-        <div className="footer-link-item-container">
-          <a href="">About Us</a>
-          <a href="">Terms Of Services</a>
-          <a href="">Privacy Policy</a>
-          <a href="">Help & Support</a>
-        </div>
-        <h3>&copy; FIXit, ALL RIGHTS RESERVED</h3>
-        <hr />
-      </footer>
+      <Footer />
     </div>
   );
 }

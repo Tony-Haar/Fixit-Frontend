@@ -1,11 +1,12 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { assets } from "../../assets/assets";
-import { serviceData } from "../../assets/assets";
-
-import "./landingPage.css";
 import Service from "../../components/service";
 import Navbar from "../../components/Navbar";
+import Footer from "../../components/Footer";
+
+import { serviceData } from "../../assets/assets";
+import "./landingPage.css";
 
 function LandingPage() {
   const serviceElements = serviceData.map((service) => (
@@ -14,37 +15,65 @@ function LandingPage() {
 
   return (
     <>
-      <header>
-        <Navbar />
-        <div className="header-hero">
-          <form action="" className="header-hero-form">
-            <h1>Search For what fits you.</h1>
+      <Navbar />
+      <header className="mt-3 mx-0 header-hero">
+        <div className="container py-4">
+          <div className="row align-items-center">
+            <div className="col-lg-6">
+              <p className="d-flex align-items-center gap-2">
+                Search For what fits you<i className="bi bi-chevron-right "></i>
+              </p>
+              <form className="d-flex mt-3">
+                <input
+                  type="text"
+                  className="form-control me-2"
+                  placeholder="Search for any service"
+                />
+                <button type="submit" className="btn btn-warning px-3">
+                  Search
+                </button>
+              </form>
+            </div>
 
-            <input type="text" placeholder="Search for any service" />
-            <button type="submit" className="hero-btn">
-              Search Icon
-            </button>
-          </form>
-          <img src={assets.Illustration} alt="" />
+            <div className="col-lg-6 text-center mt-4 mt-lg-0">
+              <img
+                src={assets.Illustration1}
+                alt="Illustration"
+                className="img-fluid illustration-img"
+                style={{
+                  width: "80%",
+                  borderTopLeftRadius: "50%",
+                  borderBottomRightRadius: "50%",
+                }}
+              />
+            </div>
+          </div>
         </div>
       </header>
 
-      <div className="partners-container">
-        <p>in case we got partners, here they will be displayed horizontally</p>
+      <div className="partners-container container-fluid mt-5 mb-5 py-5">
+        <h2 className="text-center mb-4">Partners</h2>
       </div>
 
-      <main className="landing-page-main-container">
+      <main className="landing-page-main-container container-fluid mt-5 mb-5 d-flex flex-column">
         <div className="services-display-container">
           <h1>Services</h1>
           <div className="line"></div>
-          <div className="horizontal-images">{serviceElements}</div>
+          <div className="horizontal-images text-decoration-none">
+            {serviceElements}
+          </div>
         </div>
 
-        <h1 className="offer-label">Offers</h1>
-        <div className="line"></div>
+        <h1 className="offer-label mt-5">Offers</h1>
+        <div className="line w-100"></div>
+
         <section className="offer">
           <div className="offer-illustration">
-            <img src={assets.Warranty} alt="Image Five" />
+            <img
+              src={assets.Warranty}
+              className="img-fluid"
+              alt="Warranty illustrator"
+            />
           </div>
           <div className="offer-inner-right-container">
             <div>
@@ -56,7 +85,7 @@ function LandingPage() {
               proposer
             </p>
             <Link to="/benefits">
-              <button>Learn More</button>
+              <button className="btn">Learn More</button>
             </Link>
           </div>
         </section>
@@ -76,15 +105,16 @@ function LandingPage() {
             </Link>
           </div>
           <div className="pro-service-illustration">
-            <img src={assets.GettheDeal} alt="Six Image" />
+            <img
+              src={assets.GettheDeal}
+              className="img-fluid "
+              alt="Six Image"
+            />
           </div>
         </section>
 
         <div className="testimonies-container">
-          <p>
-            In case we got testimonies, here where they will be displayed
-            horizontally
-          </p>
+          <h1>Testimonies</h1>
         </div>
 
         <div className="reasons-container">
@@ -99,22 +129,10 @@ function LandingPage() {
             <button>Learn More</button>
           </Link>
         </div>
-
         <hr />
       </main>
-
-      <footer className="footer">
-        <div className="footer-link-item-container">
-          <a href="/about-us">About Us</a>
-          <a href="">Terms Of Services</a>
-          <a href="">Privacy Policy</a>
-          <a href="">Help & Support</a>
-        </div>
-        <h3>&copy; FIXit, ALL RIGHTS RESERVED</h3>
-        <hr />
-      </footer>
+      <Footer />
     </>
   );
 }
-
 export default LandingPage;
